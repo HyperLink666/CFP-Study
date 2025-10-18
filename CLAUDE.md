@@ -75,16 +75,107 @@ For each teaching interaction:
 
 ### CFP Exam Context
 
-The Certified Financial Planner (CFP) exam covers major topics including:
-- Financial Planning Process
-- Insurance Planning and Risk Management
-- Investment Planning
-- Tax Planning
-- Retirement Savings and Income Planning
-- Estate Planning
-- Professional Conduct and Regulation
+The Certified Financial Planner (CFP) exam covers seven principal knowledge domains with specific topic weights. Understanding these weights helps prioritize study time effectively.
 
 Tailor all explanations and examples to these domains, ensuring students understand both theory and practical application.
+
+#### Principal Knowledge Domains and Topics
+
+**A. Professional Conduct and Regulation (8%)**
+- A.1 CFP Board's Code of Ethics and Standards of Conduct
+- A.2 CFP Board's Procedural Rules
+- A.3 Function, purpose, and general structure of financial institutions
+- A.4 Financial services regulations and requirements
+- A.5 Consumer protection laws
+- A.6 Fiduciary standard and application
+
+**B. General Principles of Financial Planning (15%)**
+- B.7 Financial planning process
+- B.8 Financial statements
+- B.9 Cash flow management
+- B.10 Financing strategies and debt management
+- B.11 Economic concepts
+- B.12 Time value of money concepts and calculations
+- B.13 Education needs analysis
+- B.14 Education savings vehicles
+- B.15 Education funding
+- B.16 Gift / income tax strategies
+
+**C. Risk Management and Insurance Planning (11%)**
+- C.17 Principles of risk and insurance
+- C.18 Analysis and evaluation of risk exposures
+- C.19 Health insurance and health care cost management (individual and group)
+- C.20 Disability income insurance (individual and group)
+- C.21 Long-term care insurance and long-term care planning (individual and group)
+- C.22 Qualified and Non-Qualified Annuities
+- C.23 Life insurance (individual and group)
+- C.24 Business owner insurance solutions
+- C.25 Insurance needs analysis
+- C.26 Insurance policy and company selection
+
+**D. Investment Planning (17%)**
+- D.27 Characteristics, uses and taxation of investment vehicles
+- D.28 Types of investment risk
+- D.29 Market cycles
+- D.30 Quantitative investment concepts and measures of investment returns
+- D.31 Asset allocation and portfolio diversification
+- D.32 Bond and stock valuation concepts
+- D.33 Portfolio development and analysis
+- D.34 Investment strategies
+- D.35 Alternative investments and liquidity risk
+
+**E. Tax Planning (14%)**
+- E.36 Fundamental and current tax law
+- E.37 Income tax fundamentals and calculations
+- E.38 Characteristics and income taxation of business entities
+- E.39 Income taxation of trusts and estates
+- E.40 Tax reduction/management techniques
+- E.41 Tax consequences of property transactions
+- E.42 Tax implications of special circumstances
+- E.43 Charitable/philanthropic contributions and deductions
+
+**F. Retirement Savings and Income Planning (18%)** - HIGHEST WEIGHTED
+- F.44 Retirement needs analysis
+- F.45 Social Security and Medicare planning
+- F.46 Eldercare and special needs planning
+- F.47 Types of retirement plans
+- F.48 Qualified plan rules and options
+- F.49 Non-qualified plan rules and options
+- F.50 Key factors affecting plan selection for businesses
+- F.51 Distribution rules and taxation
+- F.52 Retirement income and distribution strategies
+- F.53 Business succession planning
+
+**G. Estate Planning (10%)**
+- G.54 Property titling and beneficiary designations
+- G.55 Strategies to transfer property
+- G.56 Estate and incapacity planning documents
+- G.57 Gift, estate, and GST tax compliance and calculation
+- G.58 Sources for estate liquidity
+- G.59 Types, features, and taxation of trusts
+- G.60 Marital deduction
+- G.61 Intra-family and other business transfer techniques
+- G.62 Postmortem estate planning techniques
+- G.63 Planning for divorce, unmarried couples and other special circumstances
+- G.64 Planning for special needs and circumstances
+
+**H. Psychology of Financial Planning (7%)**
+- H.65 Client and planner attitudes, values, biases
+- H.66 Behavioral finance
+- H.67 Sources of money conflict
+- H.68 Principles of counseling
+- H.69 General principles of effective communication
+- H.70 Crisis events with severe consequences
+
+**Exam Weight Priority for Study Planning:**
+1. **Retirement Savings and Income Planning (18%)** - Highest priority
+2. **Investment Planning (17%)**
+3. **General Principles of Financial Planning (15%)**
+4. **Tax Planning (14%)**
+5. **Risk Management and Insurance Planning (11%)**
+6. **Estate Planning (10%)**
+7. **Professional Conduct and Regulation (8%)**
+8. **Psychology of Financial Planning (7%)**
 
 ### Example Interaction
 
