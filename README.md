@@ -1,184 +1,546 @@
-# CFP Exam Study Repository
+# Go 语言学习仓库
 
-🎉 **I PASSED the CFP Exam on November 10, 2025!** 🎉
+🎯 **1-2个月内从零基础达到独立开发Go项目的水平**
 
-This is my personal study repository that helped me pass the Certified Financial Planner (CFP) exam on my second attempt. After failing in November 2024, I rebuilt my study approach using AI-powered guided learning with Claude Code - and it made all the difference.
-
-**Thanks to AI and Claude Code**, I went from a failed attempt to **82% mastery** (60/73 topics) across 23 focused study sessions, ultimately passing the exam.
-
-**Let's connect on LinkedIn**: [linkedin.com/in/chenran818](https://linkedin.com/in/chenran818)
+这是一个使用 AI 辅助的 Go 语言学习仓库，旨在帮助初学者快速掌握 Go 语言，并能够独立开发实际项目。通过引导式学习、系统化知识追踪和实战项目训练，你将在 1-2 个月内成长为能够开发生产级 Go 应用的开发者。
 
 ---
 
-**Final Exam Stats**:
-- **Exam Date**: November 10, 2025 ✅ PASSED
-- **Final Progress**: 82% (60/73 CFP topics mastered)
-- **Study Sessions**: 23 sessions (Oct 11 - Nov 7, 2025)
-- **Study Materials**: 1,088 pages (2024 Dalton Review slides)
+## 📚 项目概述
 
-## How This Works
+### 学习目标
 
-This repository uses Claude Code as an interactive CFP exam tutor that:
-- Teaches using the Socratic method (asking what you know first)
-- Provides concise (~200 word) explanations
-- Verifies your understanding with follow-up questions
-- Adapts teaching style based on your responses
-- **Tracks every learning session to personalize your study experience**
+在 **1-2 个月（62天）内**完成以下目标：
 
-## Repository Structure
+- ✅ 掌握 Go 语言基础语法和核心特性
+- ✅ 深入理解 Go 的并发编程模型（Goroutine 和 Channel）
+- ✅ 能够使用主流框架（Gin）开发 Web 应用
+- ✅ 能够与数据库交互并进行 CRUD 操作
+- ✅ 独立完成 2-3 个完整的实战项目
+- ✅ 理解并应用 Go 的最佳实践和设计原则
+
+### 学习方式
+
+本仓库采用**引导式学习方法**：
+
+- 🗣️ **互动式问答教学** - 通过 Claude Code 进行一对一教学
+- 📊 **系统化进度追踪** - 记录每个学习会话的详细内容
+- 🔍 **个性化反馈** - 根据学生的理解程度调整教学方法
+- 💻 **动手实践** - 边学边写代码，及时反馈
+- 🎯 **项目驱动** - 通过实战项目巩固所学知识
+
+---
+
+## 📁 仓库结构
 
 ```
-/sessions/                    # 23 daily learning sessions documented
-  /2025-10-11/               # One folder per study day
-  /2025-10-17/               # Sessions from Oct 11 - Nov 7
-  /2025-11-07/
-  SESSION-TEMPLATE.md        # Template for documenting sessions
-
-/progress/                    # Single source of truth for exam prep
-  cfp-study-tracker.md       # Comprehensive tracker with:
-                             # - All 73 CFP topics mapped
-                             # - Topics mastered (60/73)
-                             # - Knowledge gaps identified
-                             # - Study plan for remaining days
-
-/2024 Slides/                 # Complete 2024 Dalton Review materials
-  2024 TDR Estate slides.pdf
-  2024 TDR Fundamentals slides.pdf
-  2024 TDR Insurance slides.pdf
-  2024 TDR Investments slides.pdf
-  2024 TDR Retirement slides.pdf
-  2024 TDR Tax slides.pdf
-
-CLAUDE.md                     # AI tutor instructions (Socratic method)
-README.md                     # This file
+go-study/                          # Go 语言学习仓库
+├── /sessions/                     # 学习会话记录
+│   ├── /2025-12-16/              # 每天一个文件夹
+│   │   └── session-notes.md       # 该日会话详情
+│   └── SESSION-TEMPLATE.md        # 会话笔记模板
+│
+├── /progress/                     # 学习进度追踪
+│   └── go-study-tracker.md        # 单一综合追踪文件
+│       ├── 总体进度统计
+│       ├── 各领域学习进度
+│       ├── 已掌握主题清单
+│       ├── 知识盲区追踪
+│       └── 学习资源清单
+│
+├── /code-practice/                # 代码练习（可选）
+│   ├── /week1/
+│   │   ├── hello.go
+│   │   └── basic-types.go
+│   ├── /week2/
+│   │   └── functions.go
+│   └── /projects/
+│       ├── todo-api/
+│       ├── blog-system/
+│       └── microservices/
+│
+├── CLAUDE.md                      # AI 导师指引和教学规则
+├── README.md                      # 本文件
+└── .gitignore
 ```
 
-## How to Use
+---
 
-### Daily Study Sessions
+## 🚀 快速开始
 
-1. Open Claude Code in this repository
-2. Ask questions about CFP topics naturally - just like talking to a tutor
-3. Answer the comprehension check questions Claude asks
-4. After each session, Claude will automatically document:
-   - What you learned
-   - What you struggled with
-   - What you mastered
-   - What to review next
+### 步骤 1：克隆仓库
 
-### Review Sessions
+```bash
+git clone <repository-url>
+cd go-study
+```
 
-When you want to review, simply ask Claude:
-- "Let's review topics I've struggled with"
-- "What should I focus on today?"
-- "Quiz me on my weak areas"
-- "Show me my progress"
+### 步骤 2：打开 Claude Code
 
-Claude will read your session history and create a personalized review based on your past performance.
+在仓库目录中运行：
 
-### Track Your Progress
+```bash
+claude-code
+```
 
-View your comprehensive study tracker at `/progress/cfp-study-tracker.md` to see:
-- Overall exam readiness (currently 82%)
-- Which domains are complete (4 major domains ✅)
-- Remaining knowledge gaps
-- Prioritized study plan for exam day
+### 步骤 3：开始学习
 
-## Study Philosophy
+与 Claude 对话，就像与一位耐心的 Go 语言导师交流一样。例如：
 
-**Guided Learning Approach:**
-- Conversational and judgment-free
-- Builds on your existing knowledge
-- Checks understanding before moving forward
-- Adapts to your learning style
-- Focuses on deep understanding, not just memorization
+```
+你: "我想学习 Go 语言，但我是完全初学者。我应该从哪里开始？"
 
-## Study Materials
+Claude: "很好的问题！在我为你规划学习路径之前，先告诉我...
+[Claude 会根据你的回答定制学习计划]
+```
 
-**2024 Dalton Review Slides** (1,088 pages total):
-- Estate Planning (200 pages)
-- Fundamentals (90 pages)
-- Insurance (188 pages)
-- Investments (188 pages)
-- Retirement (182 pages)
-- Tax (150 pages)
+---
 
-All materials have been thoroughly mapped to the 73 CFP exam topics.
+## 📖 学习内容概览
 
-## Free Study Resources
+### 🎓 8 个学习阶段
 
-In addition to the Dalton Review materials, here are some excellent **free resources** that can supplement your CFP exam prep:
+#### **第一阶段：Go 语言基础（第 1-3 周）**
 
-**Podcasts & Audio:**
-- [Open Exam Prep Podcast](https://open.spotify.com/show/55EmWfdtPaK641q4Rk3mI1) - Free CFP exam prep podcast on Spotify
-- [Financial Planning Essentials Playlist](https://open.spotify.com/playlist/6GUIZvnpaiOiYmXkanqwZ8) - Study music playlist on Spotify
+| 模块 | 权重 | 主要内容 |
+|------|------|--------|
+| **A. 入门准备** | 5% | 环境安装、工具链使用、项目结构 |
+| **B. 基础语法** | 15% | 变量、数据类型、控制流、函数 |
+| **C. 复合数据类型** | 12% | 数组、切片、映射、结构体 |
+| **D. 接口与多态** | 10% | 接口设计、类型断言、方法 |
 
-**Video Content:**
-- [Open Exam Prep YouTube](https://www.youtube.com/@Open-exam-prep) - Free video content covering CFP exam topics
+**目标**：能够编写基础的 Go 程序，理解核心语法
 
-**Website:**
-- [open-exam-prep.com](https://open-exam-prep.com/) - Additional free resources and study materials
+---
 
-These free resources are great for passive learning during commutes, workouts, or downtime.
+#### **第二阶段：进阶特性（第 4-6 周）**
 
-## Key Features
+| 模块 | 权重 | 主要内容 |
+|------|------|--------|
+| **E. 并发编程** ⭐ | 20% | Goroutine、Channel、同步原语 |
+| **F. 错误处理与测试** | 10% | 错误处理、单元测试、基准测试 |
+| **G. 包与模块管理** | 8% | 包管理、go modules、依赖版本 |
 
-**Personalized Learning**:
-- 23 documented study sessions with detailed notes
-- Socratic teaching method (builds on what you already know)
-- Adaptive explanations based on your responses
-- Practice problems tailored to your weak areas
+**目标**：掌握 Go 的核心优势 - 并发编程
 
-**Comprehensive Tracking**:
-- Every session automatically documented
-- Knowledge gaps identified and tracked
-- Topics mastered with confidence levels
-- Progress measured against exam weights
+---
 
-**Evidence-Based Approach**:
-- All answers verified with authoritative sources (IRS.gov, CFP Board)
-- No guessing on technical questions
-- Citations provided for complex rules
-- Focus on understanding "why" not just "what"
+#### **第三阶段：实战开发（第 7-8 周）**
 
-## How to Use This Repository for Your Own CFP Exam Prep
+| 模块 | 权重 | 主要内容 |
+|------|------|--------|
+| **H. Web 开发** | 15% | HTTP、REST API、Gin 框架 |
+| **I. 数据库操作** | 10% | SQL 操作、ORM、Redis |
+| **J. 项目实战** | 15% | 完整项目、容器化、部署 |
 
-Want to use this AI-powered study system for your own CFP exam preparation? It's simple:
+**目标**：独立开发生产级 Web 应用
 
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/chenran818/CFP-Study.git
-   cd CFP-Study
-   ```
+---
 
-2. **Clear my study history** (start fresh):
-   ```bash
-   rm -rf progress/ sessions/
-   ```
+### 💡 知识领域权重（优先级排序）
 
-3. **Run Claude Code**:
+1. **并发编程（20%）** ⭐⭐⭐ - Go 的核心优势，必须精通
+2. **基础语法（15%）** ⭐⭐⭐ - 所有内容的基础
+3. **Web 开发（15%）** ⭐⭐⭐ - 实战应用最广泛
+4. **项目实战（15%）** ⭐⭐⭐ - 巩固全部知识
+5. **复合数据类型（12%）** ⭐⭐ - 重要的数据结构
+6. **接口与多态（10%）** ⭐⭐ - Go 的设计哲学
+7. **错误处理与测试（10%）** ⭐⭐ - 工程实践
+8. **数据库操作（10%）** ⭐⭐ - 后端开发必备
+9. **包与模块管理（8%）** ⭐ - 项目组织
+10. **入门准备（5%）** ⭐ - 初期准备
+
+---
+
+## 📊 进度追踪系统
+
+### 工作方式
+
+每次学习后，Claude 会自动完成两个步骤：
+
+#### **步骤 1：记录会话详情**
+
+在 `/sessions/YYYY-MM-DD/session-notes.md` 中记录：
+
+- 你提出的所有问题
+- 你的初始理解
+- 解释过的概念
+- 你对理解检查问题的回答
+- 识别的知识盲区
+- 掌握的主题和置信度
+- 编写和测试过的代码
+- 下次需要跟进的内容
+
+**目的**：保存完整的学习历程，为后续的个性化复习提供依据
+
+#### **步骤 2：更新整体进度**
+
+在 `/progress/go-study-tracker.md` 中更新：
+
+- 本次掌握的新主题
+- 新发现的知识盲区或盲区更新
+- 整体进度百分比
+- 剩余学习计划
+- 优先级调整
+
+**目的**：维护总体学习进度的全局视图
+
+### 查看进度
+
+随时可以查看 `/progress/go-study-tracker.md` 了解：
+
+- 📊 **总体进度** - 已掌握多少个主题？
+- 🎯 **当前焦点** - 应该学什么？
+- 🔴 **知识盲区** - 哪些地方需要加强？
+- 📈 **时间规划** - 剩余多少时间？
+
+---
+
+## 💻 如何使用
+
+### 日常学习
+
+1. **打开 Claude Code**：
    ```bash
    claude-code
    ```
 
-4. **That's it!** Start asking CFP questions and Claude will:
-   - Teach you using the Socratic method
-   - Create new `progress/` and `sessions/` folders automatically
-   - Track your learning journey just like it did for me
-   - Adapt to your learning style
+2. **自然提问**：就像和导师聊天一样提问
+   ```
+   "什么是 goroutine？"
+   "我想学习如何编写 REST API"
+   "帮我检查一下这段代码"
+   ```
 
-The `CLAUDE.md` file contains all the instructions for how Claude should tutor you. The `2024 Slides/` folder has all the study materials already mapped to CFP topics. **It works magically!**
+3. **积极回答**：Claude 会问理解检查问题，认真回答
+   ```
+   Claude: "你能用自己的话解释一下 channel 是什么吗？"
+   你: "Channel 是..."
+   ```
 
-## Getting Started
+4. **编写代码**：边学边写，不要只读不练
 
-Just start a conversation with Claude Code and ask your first CFP question. Claude will guide you from there while automatically tracking your progress.
+### 复习和加强
+
+遇到困难时，告诉 Claude：
+
+```
+"我对并发编程不太理解，能重新解释一下吗？"
+"让我做个测试，看看我对切片的理解程度"
+"查一下我之前对这个主题的笔记"
+```
+
+Claude 会：
+- 读取你过去的会话记录
+- 了解你之前的困难
+- 用不同的方法重新解释
+- 提供针对性的练习
+
+### 项目实战
+
+到第 7-8 周，你会完成实战项目：
+
+1. **Todo List API**（第一个项目）
+   - 学习基本的 REST API 开发
+   - 接触数据库操作
+
+2. **博客系统**（综合项目）
+   - 用户认证和授权
+   - 复杂的业务逻辑
+   - 前后端分离
+
+3. **微服务系统**（高级项目）
+   - 多个服务的协调
+   - 服务间通信
+   - 部署和运维
 
 ---
 
-## About the Author
+## 🎓 教学方法
 
-After failing the CFP exam in November 2024, I knew I needed a different approach. Traditional study methods weren't working for me. Using Claude Code as my AI study partner transformed my preparation - the Socratic teaching method, personalized feedback, and systematic progress tracking made complex financial planning concepts finally click.
+### 苏格拉底式教学法
 
-If you're preparing for the CFP exam or any professional certification, I hope this repository inspires you to leverage AI tools in your learning journey.
+Claude 不会直接给你答案，而是：
 
-**Connect with me**: [linkedin.com/in/chenran818](https://linkedin.com/in/chenran818)
+1. **先问你知道什么**
+   ```
+   "你对切片已经了解多少？"
+   ```
+
+2. **在你的基础上构建**
+   ```
+   "好的，既然你知道数组，切片就像..."
+   ```
+
+3. **通过提问引导你发现**
+   ```
+   "如果数组长度固定，那切片怎样才能动态增长呢？"
+   ```
+
+4. **验证你的理解**
+   ```
+   "现在你能告诉我，为什么 append 会改变底层数组吗？"
+   ```
+
+### 代码示例
+
+所有代码示例都：
+- ✅ 可以直接运行（包含 package 和 import）
+- ✅ 有详细注释说明
+- ✅ 展示预期输出
+- ✅ 包含常见错误的说明
+
+### 检查理解
+
+每个主题之后，Claude 会：
+
+- 问 1-2 个关键问题
+- 根据你的回答调整教学深度
+- 必要时用例子或类比帮助理解
+- 确认你真的理解了才继续
+
+---
+
+## 🛠️ 开发环境准备
+
+### 系统需求
+
+- **操作系统**：Windows、macOS 或 Linux
+- **内存**：至少 4GB
+- **磁盘**：至少 2GB（用于 Go 和依赖）
+
+### 安装 Go
+
+1. **访问** [https://go.dev/dl](https://go.dev/dl)
+2. **下载**最新稳定版（Go 1.21 或更高版本）
+3. **安装**并验证：
+   ```bash
+   go version
+   ```
+
+### 推荐 IDE
+
+**VSCode**（轻量级，推荐新手）
+```bash
+# 1. 安装 VSCode
+# 2. 安装 Go 插件 (Go extension)
+# 3. 在 Go 项目中打开
+```
+
+**GoLand**（功能强大，付费但有学生免费版）
+- 下载：https://www.jetbrains.com/go/
+
+### 验证安装
+
+```bash
+go version
+go env
+```
+
+---
+
+## 📚 学习资源
+
+### 官方资源
+
+- **Go 官网**：https://go.dev/
+- **官方文档**：https://go.dev/doc/
+- **Go Tour**：https://go.dev/tour/ （强烈推荐！交互式入门）
+- **标准库文档**：https://pkg.go.dev/std
+- **Effective Go**：https://go.dev/doc/effective_go （写出规范代码）
+
+### 在线教程
+
+- **Go by Example**：https://gobyexample.com/ （通过代码学习）
+- **Learn Go with Tests**：https://quii.gitbook.io/learn-go-with-tests/ （测试驱动）
+- **Roadmap.sh Go**：https://roadmap.sh/golang （学习路线图）
+
+### 推荐书籍
+
+1. **《The Go Programming Language》**（官方作者著，中译名：Go程序设计语言）
+   - 深度讲解，适合想透彻理解语言的读者
+
+2. **《Go 语言实战》**（Go in Action）
+   - 实战导向，有很多项目示例
+
+3. **《Go Web 编程》**
+   - 专注 Web 开发，有完整的项目示例
+
+### 开发工具
+
+- **Delve 调试器**：https://github.com/go-delve/delve
+  ```bash
+  go install github.com/go-delve/delve/cmd/dlv@latest
+  ```
+
+- **Go 代码覆盖率工具**：
+  ```bash
+  go test -cover ./...
+  ```
+
+### 流行框架和库
+
+| 领域 | 推荐框架/库 | 用途 |
+|------|-----------|------|
+| **Web** | Gin, Echo | 路由、中间件、快速开发 |
+| **ORM** | GORM | 数据库操作抽象 |
+| **日志** | logrus, zap | 结构化日志 |
+| **配置** | viper | 配置文件管理 |
+| **HTTP** | net/http（标准库） | 基础 HTTP 操作 |
+| **缓存** | go-redis | Redis 客户端 |
+| **测试** | testify | 测试断言库 |
+
+---
+
+## 🎯 学习计划概览
+
+### 第 1-3 周：基础打底
+
+| 周 | 内容 | 时间投入 | 验收标准 |
+|----|------|--------|--------|
+| **W1** | 环境准备、基础语法、Hello World | 2-3h/天 | 会写简单的 Go 程序 |
+| **W2** | 数据类型、控制流、函数 | 2-3h/天 | 能写包含循环和函数的程序 |
+| **W3** | 切片、映射、结构体 | 2-3h/天 | 理解复合数据类型 |
+
+### 第 4-6 周：能力突破
+
+| 周 | 内容 | 时间投入 | 验收标准 |
+|----|------|--------|--------|
+| **W4** | 接口、方法、goroutine 入门 | 3-4h/天 | 会用 goroutine |
+| **W5** | Channel、并发模式、sync 包 | 3-4h/天 | 理解并发通信 |
+| **W6** | 测试、错误处理、包管理 | 3-4h/天 | 会写单元测试 |
+
+### 第 7-8 周：项目实战
+
+| 周 | 内容 | 时间投入 | 验收标准 |
+|----|------|--------|--------|
+| **W7** | Web 基础、Gin、数据库、第一个项目 | 4-5h/天 | 完成 Todo API |
+| **W8** | 完整项目、容器化、部署 | 4-5h/天 | 完成综合项目 |
+
+### 第 9 周：查漏补缺
+
+- 复习薄弱环节
+- 完善项目细节
+- 预留时间应对学习中的意外困难
+
+---
+
+## ✅ 成功标准
+
+学习完成后，你应该能够：
+
+- [ ] **编写 Go 程序**：能够独立编写完整的 Go 程序
+- [ ] **并发编程**：正确使用 Goroutine 和 Channel
+- [ ] **Web 开发**：使用 Gin 开发 RESTful API
+- [ ] **数据库**：与 MySQL/PostgreSQL 和 Redis 交互
+- [ ] **项目开发**：独立完成一个包含前后端的完整项目
+- [ ] **测试**：为代码编写单元测试和集成测试
+- [ ] **代码规范**：遵循 Go 的最佳实践和编码规范
+- [ ] **阅读代码**：能够理解和学习开源 Go 项目代码
+
+---
+
+## ⚠️ 常见陷阱（提前预警）
+
+学习过程中可能遇到的 Go 语言特性：
+
+1. **切片陷阱**
+   ```go
+   // 共享底层数组导致的意外修改
+   s1 := []int{1, 2, 3, 4, 5}
+   s2 := s1[1:3]  // s2 = [2, 3]
+   s2[0] = 999    // 修改 s2 也修改了 s1!
+   ```
+
+2. **Goroutine 泄漏**
+   ```go
+   // 忘记关闭 channel 或 context
+   for i := 0; i < 1000; i++ {
+       go func() {
+           <- ch  // 如果 ch 永远不发送，goroutine 会一直等待
+       }()
+   }
+   ```
+
+3. **nil Interface**
+   ```go
+   var i interface{} = (*string)(nil)
+   if i == nil {  // false! 因为接口不是 nil
+       // 不会进入这个分支
+   }
+   ```
+
+4. **循环变量捕获**
+   ```go
+   for i := 0; i < 3; i++ {
+       go func() {
+           fmt.Println(i)  // 都打印 3，不是 0, 1, 2
+       }()
+   }
+   ```
+
+---
+
+## 🤝 获得帮助
+
+遇到问题时，这样告诉 Claude：
+
+```
+"我遇到了这个错误... [粘贴错误信息]"
+"我不理解这个概念，能用例子解释吗？"
+"请检查我的代码并指出问题"
+"我之前学过这个，但忘了，能帮我复习吗？"
+```
+
+Claude 会：
+- 读取你的学习历史
+- 了解你的学习风格
+- 提供针对性的帮助
+- 确保你真的理解（不只是解决问题）
+
+---
+
+## 📝 贡献和反馈
+
+如果你在使用本学习系统时：
+
+- 💡 发现了有效的学习方法
+- 🐛 遇到了教学方法的问题
+- 📚 建议添加更多资源
+- ✨ 改进了项目结构
+
+欢迎通过以下方式贡献：
+
+1. 提交 GitHub Issue
+2. 提交 Pull Request
+3. 分享你的学习经验
+
+---
+
+## 🎉 开始学习
+
+准备好了吗？打开 Claude Code 开始你的 Go 语言学习之旅吧！
+
+```bash
+claude-code
+```
+
+然后就像这样开始对话：
+
+```
+"嗨，我是 Go 语言的完全初学者。我想在 2 个月内学会独立开发 Go 项目。我应该从哪里开始？"
+```
+
+祝你学习顺利！📚🚀
+
+---
+
+## 📄 许可证
+
+本项目采用 MIT 许可证。你可以自由使用、修改和分发本项目的代码和文档。
+
+---
+
+**最后更新**：2025年12月16日
+**学习模式**：AI 驱动的引导式学习
+**预期完成**：2026年2月16日
